@@ -40,18 +40,21 @@ h1 {
   max-width: 20rem;
 }
 
-.intro .move>h2 {
-  font-size: 3rem;
-  margin-top: 0;
+h1 img {
+border: 0px;
 }
-.name h2 {
+.move>h2 {
+  font-size: 3rem;
   margin: 0;
 }
 
 header nav ul {
   list-style-type: none;
   display: flex;
+  justify-content: flex-start;
   gap: 1.5rem;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 header nav ul li a {
@@ -72,15 +75,15 @@ footer {
   color: #fff;
 }
 
-.list{
+.list {
   display: flex;
 }
 
-dl dt{
+dl dt {
   font-weight: bold;
 }
 
-dl dd{
+dl dd {
   margin: 0;
   padding-left: .5em;
 }
@@ -123,6 +126,7 @@ dl dd{
 
 .buy a {
   color: white;
+  text-decoration: none;
 }
 span {
   font-size: 2em;
@@ -138,18 +142,18 @@ span {
   }
 
   .buy {
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
   .mid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       align-items: flex-start;
       grid-column-gap: 1em;
       padding: 1em 0;
   }
 
 .pp {
-  max-width: 20em;
+  max-width: 40em;
 }
   .fourth {
     display: grid;
@@ -173,7 +177,7 @@ span {
   }
   .second, .mid {
       display: flex;
-      justify-content: space-around;
+      justify-content: flex-start;
       flex-direction: row;
       padding: 1em 0;
   }
