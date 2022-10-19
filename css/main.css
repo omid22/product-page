@@ -16,7 +16,6 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   background-color: white;
-  / include your font family and default line-height /
 }
 
 img {
@@ -71,7 +70,7 @@ header nav ul li a:focus {
 
 footer {
   text-align: center;
-  background-color: #E7BC6A;
+  background-color: #6D9216;
   color: #fff;
 }
 
@@ -134,7 +133,19 @@ span {
   font-size: 2em;
   color: #AE1414;
 }
+.buy {
+	color: #fff;
+	background-color: #6D9216;
+  border: 2px solid #E7BC6A;
+  border-radius: 0;
+  transition: all .5s ease;
+}
 
+.buy:hover {
+color: #4a89ca;
+background: #E7BC6A;
+border-radius: 5px;
+}
 @media only screen and (min-width: 48em) {
   .intro {
     display: flex;
