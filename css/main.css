@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  background-color: white;
 }
 
 *, *::before, *::after {
@@ -12,7 +13,8 @@ html {
 
 body {
   margin: 0;
-  /* include your font family and default line-height */
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
 }
 
 img {
@@ -26,14 +28,18 @@ img {
 
 header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 header nav ul {
   list-style-type: none;
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   gap: 1.5rem;
+  background-color: #739538;
 }
 
 header nav ul li a {
@@ -41,6 +47,30 @@ header nav ul li a {
   font-weight: bold;
   text-decoration: none;
   font-size: 1.25rem;
+  color: #fff;
+
+}
+
+.first {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "pic pic2 text link"
+  "pic pic2 text link"
+}
+
+.pics {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 6rem;
+  list-style: none;
+  margin-left: 0;
+  margin-top: 0;
+  padding-left: 0.5em;
+  border-radius: 5px;
+
 }
 
 header nav ul li a:hover,
@@ -50,6 +80,8 @@ header nav ul li a:focus {
 
 footer {
   text-align: center;
+  background-color: #739538;
+  color: #fff;
 }
 
 
