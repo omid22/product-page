@@ -44,7 +44,7 @@ h1 img {
 border: 0px;
 }
 .move>h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0;
 }
 
@@ -93,7 +93,8 @@ dl dd {
   border-radius: 10px;
 }
 
-
+.first {
+}
 .twoimg {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -115,6 +116,7 @@ dl dd {
   grid-row-gap: 1rem;
   padding-bottom: 1rem;
 }
+
 .buy {
   background-color: #E7BC6A;
   border-radius: 5px;
@@ -135,7 +137,7 @@ span {
 
 @media only screen and (min-width: 48em) {
   .intro {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
     align-items: flex-start;
     grid-column-gap: 1em;
@@ -173,7 +175,7 @@ span {
   }
 
   .buy {
-    margin-top: 14rem;
+    margin-top: 2rem;
   }
   .second, .mid {
       display: flex;
